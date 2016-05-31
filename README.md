@@ -20,6 +20,7 @@ vagrant up
 ```
 You can test Ansible with these commands
 ```
+vagrant ssh
 ansible --version
 ansible develop1 -m ping
 ```
