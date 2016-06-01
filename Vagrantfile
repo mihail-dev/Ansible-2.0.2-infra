@@ -32,7 +32,7 @@ NE5OgEXk2wVfZczCZpigBKbKZHNYcelXtTt/nP3rsCuGcM4h53s=
 
 Vagrant.configure(2) do |config|
   config.vm.define "ansible", primary: true do |ansible|
-    ansible.vm.box = "puppetlabs/centos-7.0-64-puppet"
+    ansible.vm.box = "puppetlabs/centos-7.2-64-puppet"
     ansible.vm.network "private_network", ip: "192.177.0.7"
     # Keep default ssh keys
     ansible.ssh.insert_key = false
@@ -61,7 +61,7 @@ EOT
   end
 
   config.vm.define "develop" do |develop|
-    develop.vm.box = "puppetlabs/centos-7.0-64-puppet"
+    develop.vm.box = "puppetlabs/centos-7.2-64-puppet"
     develop.vm.network "private_network", ip: "192.177.0.8"
     # Keep default ssh keys
     develop.ssh.insert_key = false
