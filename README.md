@@ -1,4 +1,4 @@
-# Ansible-2.0.2-infra
+# Ansible-infra
 
 ## Synopsis
 
@@ -8,14 +8,14 @@ This repo helps provision a local infrastructure for Ansible playbooks developme
 
 ## Motivation
 
-Ansible is currently not supported on Windows. 
+Ansible is currently not supported natively on Windows. This repo provides a development environment for ansible playbooks using Vagrant.
 
 ## Installation
 
 Clone the repo and provision the machines with vagrant:
 ```
-git clone https://github.com/mihail-dev/Ansible-2.0.2-infra.git
-cd Ansible-2.0.2-infra
+git clone https://github.com/mihail-dev/Ansible-infra.git
+cd Ansible-infra
 vagrant up
 ```
 You can test Ansible with these commands
