@@ -65,6 +65,7 @@ EOT
     develop.vm.network "private_network", ip: "192.177.0.8"
     # Keep default ssh keys
     develop.ssh.insert_key = false
+    develop.vm.provision "shell", inline: "iptables -D INPUT 7"
   end
 
   # Share an additional folder to the guest VM. The first argument is
